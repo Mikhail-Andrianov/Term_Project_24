@@ -30,6 +30,8 @@ def split_audio_into_segments(input_folder, output_folder, segment_length_ms=300
             print(f"{num_segments} segments created for {filename}.")
 
 # Example usage:
-input_folder = "input_folder"
-output_folder = "output_segments"
-split_audio_into_segments(input_folder, output_folder, 40, 10)
+input_folder = "rus_wav"
+output_folder = "rus_segments_overlap"
+segment_length_ms = 3000
+overlap_ms = 100
+split_audio_into_segments(input_folder, output_folder, segment_length_ms, overlap_ms)
